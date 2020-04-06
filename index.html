@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Pan Liu">
+  <meta name="description" content="My personal homepage">
+
+  <title>Pan's Homepage</title>
+
+  <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+  <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+  <link rel="icon" href="static/img/cf.png">
+
+  <!-- Bootstrap -->
+  <link href="static/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <!-- <link href="static/css/bootstrap-theme.css" rel="stylesheet" type="text/css"> -->
+
+  <!-- Extra -->
+  <link href="static/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="static/css/animate.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom -->
+  <link href="static/css/my.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <link rel="shortcut icon" href="favicon.ico">
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="static/js/jquery-1.11.3.js"></script>
+  <!-- Google analytics -->
+  <script src="static/js/analytics.js"></script>
+</head>
+
+<body id="page-top" class="ga-label">
+
+<!-- Navigation -->
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top ga-label" role="navigation">
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="a-top0" class="navbar-brand page-scroll" href="#page-top">
+        <span class="my-name"></span>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="navbar-collapsed" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+        <li class="hidden">
+          <a id="a-top" class="page-scroll" href="#page-top"></a>
+        </li>
+        <!--
+        <li> 
+          <a id="a-news" class="page-scroll" href="#news">News</a>
+        </li> 
+        -->
+        <li>
+          <a id="a-pub" class="page-scroll" href="#research">Publications</a>
+        </li>
+        <!--
+        <li>
+          <a id="a-proj" class="page-scroll" href="#projects">Projects</a>
+        </li>
+        -->
+        <li>
+          <a id="a-teach" class="page-scroll" href="#teaching">Teaching</a>
+        </li>
+        <li>
+          <a id="a-about" class="page-scroll" href="#about">About</a>
+        </li>
+
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+
+<section id="intro" class="section-first ga-label">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-lg-8 center-col">
+        <!-- Content -->
+        <div class="row">
+					<hr>
+          <div class="col-xs-6 col-sm-3 pull-right" style="max-width:300px">
+            <img src="static/img/me.JPG" class="img-responsive img-thumbnail" alt="My Photo">
+          </div>
+          <div class="clearfix visible-xs-block"></div>
+          <div class="col-sm-9 text-left">
+            <p>
+              I am a fifth-year PhD student in Mechanical Engineering at the <a target="_blank" href="http://www.psu.edu">Penn State University</a> (<i class="fa fa-envelope"></i> pan.liu@psu.edu), focusing on machine learning and data science for robotics. Specifically, I am interested in data-driven dynamic modeling and control for robotics by leveraging traditional control theories and modern mathematical methods in machine learning. Currently, I'm working on designing reinforcement learning algorithms on a quadcopter such that it learns highly dynamically challenging maneuvers, such as inverted landing. In the summer of 2019, I interned at the MathWorks where I worked on various control related toolboxes. Previously, I worked on developing the mechatronic and control systems for Micro Aerial Vehicles (MAVs) when I was a master's student and humanoid bipedal robots and structure-health-inspection ground vehicles when I was an undergraduate.
+							<br>
+						</p>
+            <div class="visible-sm-block visible-lg-block visible-md-block visible-xs-block">
+              <a class="btn btn-primary btn-sm" id="a-scholar"
+                 target="_blank">
+                 <i class="fa fa-graduation-cap"></i> Scholar
+              </a>
+              <a class="btn btn-primary btn-sm" id="a-linkedin"
+                 target="_blank" href="https://www.linkedin.com/in/panwliu">
+                 <i class="fa fa-linkedin-square fa-lg"></i> LinkedIn
+              </a>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="ga-label">
+  <div class="header">
+    <h1>Publications</h1>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-lg-8 center-col">
+        <!-- Start Listing -->
+        <div id="pub-vrlfd" class="row pub ga-label">
+          <div class="header">
+            <h4 class="pub-title">
+              Bio-inspired Inverted Landing Strategy in a Small Aerial Robot Using Policy Gradient
+            </h4>
+            <h5 class="pub-author">
+              <span class="my-name"></span>, Junyi Geng, Yixian Li, Yanran Cao, Yagiz E. Bayiz, Jack W. Langelaan, Bo Cheng
+            </h5>
+            <p class="pub-cite">
+              Submitted to
+              <span class="conf-name">IEEE International Conference on Intelligent Robots and Systems</span> (IROS), 2020.
+            </p>
+          </div>
+          <div class="col-xs-3 visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">
+            <img class="img-responsive" src="static/img/pub_invLanding_framework.png" alt="...">
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <p class="pub-desc">
+                Landing upside down on a ceiling is challenging as it requires a flier to invert its body and land against the gravity, a process that demands a stringent spatiotemporal coordination of body translational and rotational motion. Although such an aerobatic feat is routinely performed by biological fliers such as flies, it is not yet achieved in aerial robots using onboard sensors. This work describes the development of a bio-inspired inverted landing strategy using computationally efficient Relative Retinal Expansion Velocity (RREV) as a visual cue. This landing strategy consists of a sequence of two motions, i.e. an upward acceleration and a rapid angular maneuver. A policy search algorithm is applied to optimize the landing strategy and improve its robustness by learning the transition timing between the two motions and the magnitude of the target body angular velocity. Simulation results show that the aerial robot is able to achieve robust inverted landing, and it tends to exploit its maximal maneuverability. In addition to the computational aspects of the landing strategy, the robustness of landing is also significantly dependent on the mechanical design of the landing gear, the upward velocity at the start of body rotation, and timing of rotor shutdown.
+              <br />
+              <b>Keywords</b>: policy gradient, vision-guided inverted landing, nonlinear geometric control, quadrotor, physics-based simulation
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div id="pub-vrlfd" class="row pub ga-label">
+          <div class="header">
+            <h4 class="pub-title">
+              Flies Land Upside Down on a Ceiling using Rapid Visually Mediated Rotational Maneuvers
+            </h4>
+            <h5 class="pub-author">
+              <span class="my-name"></span>, Sanjay P. Sane, Jean-Michel Mongeau, Jianguo Zhao, Bo Cheng
+            </h5>
+            <p class="pub-cite">
+              In the
+              <span class="conf-name">Science Advances</span>, 5, eaax1877 (2019).
+            </p>
+          </div>
+          <div class="col-xs-3 visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">
+            <img class="img-responsive" src="static/img/pub_invLandingSA.jpg" alt="...">
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <p class="pub-desc">
+              Flies and other insects routinely land upside down on a ceiling. These inverted landing maneuvers are among the most remarkable aerobatic feats, yet the full range of these behaviors and their underlying sensorimotor processes remain largely unknown. Here, we report that successful inverted landing in flies involves a serial sequence of well-coordinated behavioral modules, consisting of an initial upward acceleration followed by rapid body rotation and leg extension, before terminating with a leg-assisted body swing pivoted around legs firmly attached to the ceiling. Statistical analyses suggest that rotational maneuvers are triggered when flies’ relative retinal expansion velocity reaches a threshold. Also, flies exhibit highly variable pitch and roll rates, which are strongly correlated to and likely mediated by multiple sensory cues. When flying with higher forward or lower upward velocities, flies decrease the pitch rate but increase the degree of leg-assisted swing, thereby leveraging the transfer of body linear momentum.
+              <br />
+              <b>Keywords</b>: optical flow, inverted landing, flapping wing aerodynamics, aggressive maneuvers
+              <br />
+              <a class="btn btn-primary btn-xs" id="a-pub-plato-arxiv"
+                  target="_blank" href="https://advances.sciencemag.org/content/5/10/eaax1877">
+                <i class="fa fa-external-link"></i> Paper
+              </a>
+              <a class="btn btn-primary btn-xs" id="a-pub-plato-video"
+                  target="_blank" href="https://www.youtube.com/watch?v=vqWyU510tFY">
+                <i class="fa fa-play-circle"></i> Video
+              </a>
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div id="pub-vrlfd" class="row pub ga-label">
+          <div class="header">
+            <h4 class="pub-title">
+              Real-Time Learning of Efficient Lift Generation on a Dynamically Scaled Flapping Wing Using Policy Search
+            </h4>
+            <h5 class="pub-author">
+              Yagiz E. Bayiz, Long Chen, Shih-Jung Hsu, <span class="my-name"></span>, Aaron N. Aguiles, Bo Cheng
+            </h5>
+            
+            <p class="pub-cite">
+              In the
+              <span class="conf-name">IEEE International Conference on Robotics and Automation</span> (ICRA), 2018.
+            </p>
+            
+          </div>
+          <div class="col-xs-3 visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">
+            <img class="img-responsive" src="static/img/pub_roboWing.jpg" alt="...">
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <p class="pub-desc">
+              We present a successful application of a policy search algorithm to a real-time robotic learning problem, where the goal is to maximize the efficiency of lift generation on a dynamically scaled flapping robotic wing. The robotic wing has two degrees-of-freedom, i.e., stroke and pitch, and operates in a tank filled with mineral oil. For all experiments, the Reynolds number is maintained constant at 1000, where learning is performed for different prescribed stroke amplitudes to find the optimal wing pitching amplitude and the stroke-pitch phase difference that maximize the power loading (PL) of lift generation, a measure of aerodynamic efficiency. For the investigated stroke amplitude range (30°-90°), the efficiency is observed to increase with the stroke amplitude and the lift is mainly generated through the delayed stall, a quasi-steady aerodynamic mechanism. Furthermore, the wing rotation becomes more asymmetric with respect to stroke reversal as the stroke amplitude decreases, indicating an increased use of unsteady lift generation mechanisms at lower stroke amplitudes.
+              <br />
+              <b>Keywords</b>: policy search, real-time learning, flapping wing robot, dynamically scale
+              <br />
+              <a class="btn btn-primary btn-xs" id="a-pub-plato-arxiv"
+                 target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8460781">
+                <i class="fa fa-external-link"></i> Paper
+              </a>
+              <a class="btn btn-primary btn-xs" id="a-pub-plato-video"
+                 target="_blank" href="https://www.youtube.com/watch?v=j2ZKwTbp1SU">
+                <i class="fa fa-play-circle"></i> Video
+              </a>
+            </p>
+          </div>
+        </div>
+				<hr>
+				<div id="pub-vrlfd" class="row pub ga-label">
+          <div class="header">
+            <h4 class="pub-title">
+              Flight Control of Landing Maneuvers in Bluebottle Flies
+            </h4>
+            <h5 class="pub-author">
+              <span class="my-name"></span>, Xinyu Wang, Daniel Yeung, Bo Cheng
+            </h5>
+            <p class="pub-cite">
+              In the
+              <span class="conf-name">Conference of Integrated Comparative Biology</span> (SICB), 2018.
+            </p>
+          </div>
+          <div class="col-xs-3 visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">
+            <img class="img-responsive" src="static/img/pub_visualCues.jpg" alt="...">
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <p class="pub-desc">
+              Inverted landing is arguably one of the most remarkable flight behaviors observed in flying animals when they execute a sequence of precisely-controlled body maneuvers to rapidly align its body with the ceiling under stringent time constraints. In this study, we aim to decode the underlying triggering and control mechanisms of inverted landing in flies using high-speed videography. Our analysis suggests that relative radial expansion rate (RREV) is most likely to be the visual cue that triggers the angular maneuver. Moreover, the strong correlations between the peak angular rate and the magnitude of preceding visual cues or body linear velocities indicate that the landing is precisely controlled by visual and/or mechanosensory cues. To generate the angular manoeuvers during landing, flies use bilaterally symmetric and asymmetric wing kinematic changes, such as fore/aft tilting of stroke plane, shifting the mean wing pitch angle and lateral tilt of stroke plane.
+              <br />
+              <a class="btn btn-primary btn-xs" id="a-pub-plato-arxiv"
+                 target="_blank" href="https://sicb.org/meetings/2018/schedule/abstractdetails.php?id=1247">
+                <i class="fa fa-external-link"></i> Paper
+              </a>
+            </p>
+          </div>
+        </div>
+				<hr>
+        <div id="pub-vrlfd" class="row pub ga-label">
+          <div class="header">
+            <h4 class="pub-title">
+              Limitations of Rotational Manoeuvrability in Insects and Hummingbirds: Evaluating the Effects of Neuro-biomechanical Delays and Muscle Mechanical Power
+            </h4>
+            <h5 class="pub-author">
+              <span class="my-name"></span>, Bo Cheng
+            </h5>
+            <p class="pub-cite">
+              In the
+              <span class="conf-name">Journal of the Royal Society Interface</span>, July 2017, volume 14, issue132.
+            </p>
+          </div>
+          <div class="col-xs-3 visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">
+            <img class="img-responsive" src="static/img/pub_blockDiagram.jpg" alt="...">
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <p class="pub-desc">
+              Flying animals ranging in size from fruit flies to hummingbirds are nimble fliers with remarkable rotational manoeuvrability. The degrees of manoeuvrability among these animals, however, are noticeably diverse and do not simply follow scaling rules of flight dynamics or muscle power capacity. As all manoeuvres emerge from the complex interactions of neural, physiological and biomechanical processes of an animal's flight control system, these processes give rise to multiple limiting factors that dictate the maximal manoeuvrability attainable by an animal. Here using functional models of an animal's flight control system, we investigate the effects of three such limiting factors, including neural and biomechanical (from limited flapping frequency) delays and muscle mechanical power, for two insect species and two hummingbird species, undergoing roll, pitch and yaw rotations. The results show that for animals with similar degree of manoeuvrability, for example, fruit flies and hummingbirds, the underlying limiting factors are different, as the manoeuvrability of fruit flies is only limited by neural delays and that of hummingbirds could be limited by all three factors. In addition, the manoeuvrability also appears to be the highest about the roll axis as it requires the least muscle mechanical power and can tolerate the largest neural delays.
+              <br />
+              <a class="btn btn-primary btn-xs" id="a-pub-plato-arxiv"
+                 target="_blank" href="https://rsif.royalsocietypublishing.org/content/14/132/20170068">
+                <i class="fa fa-external-link"></i> Paper
+              </a>
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div id="pub-mil" class="row pub ga-label">
+          <div class="header">
+            <h4 class="pub-title">
+              An Insect Tether System Using Magnetic Levitation: Development, Analysis and Feedback Control
+            </h4>
+            <h5 class="pub-author">
+              Shih-Jung Hsu, Yagız E. Bayiz, <span class="my-name"></span>, Bo Cheng
+            </h5>
+            <p class="pub-cite">
+              In the 
+              <span class="conf-name"> ASME Dynamic Systems and Control Conference</span> (DSCC), 2017.
+            </p>
+          </div>
+          <div class="col-xs-3 visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">
+            <img class="img-responsive" src="static/img/pub_levitation.JPG" alt="...">
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <p class="pub-desc">
+              This work aims to develop a novel insect tether system using magnetic levitation. Such a system magnetically fixes an insect in space but allows it to rotate freely about yaw axis with minimal interference from mechanical constraints. This work presents the development, analysis and feedback control of this system and finally test its performance. In addition, a system identification of the magnetic levitation system and detailed analysis in closed-loop stability and performance are provided. In the future, the insect tether system will be applied to study the insect flight aerodynamics, sensing and control.
+              <br />
+              <a class="btn btn-primary btn-xs" id="a-pub-plato-arxiv"
+                 target="_blank" href="https://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleID=2604392">
+                <i class="fa fa-external-link"></i> Paper
+              </a>
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div id="pub-himpc" class="row pub ga-label">
+          <div class="header">
+            <h4 class="pub-title">
+              Flight Mechanics of Landing Maneuvers in Bluebottle Flies
+            </h4>
+            <h5 class="pub-author">
+              Daniel Yeung, Xinyu Wang, Shih-Jung Hsu, <span class="my-name"></span>, Bo Cheng
+            </h5>
+            <p class="pub-cite">
+              In the
+              <span class="conf-name">Conference of Integrated Comparative Biology</span> (SICB), 2017.
+            </p>
+          </div>
+          <div class="col-xs-3 visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">
+            <img class="img-responsive" src="static/img/pub_wingKin.jpg" alt="...">
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <p class="pub-desc">
+              Landing maneuvers on an inverted horizontal surface (or a ceiling) is arguably one of the most difficult aerial maneuvers in flying insects, but received relatively little study. Herein, using high-speed video recordings, we aim to understand the mechanics and control of landing maneuvers in bluebottle flies (Calliphora vomitoria). The landing maneuvers were recorded by triggering three high-speed cameras after startling the flies, when a number of flies attempted to land on the ceiling. Results show that flies were able to land on the ceiling by performing rapid body rotations, most frequently about pitch axis, but sometimes also about roll and yaw axes. Flight speed, direction and body orientation prior to landing varied significantly among maneuvers, and only with a proper combination of these three parameters, the flies were able to land successfully. The legs of the flies were also employed differently when they landed with different patterns. 
+              <br />
+              <a class="btn btn-primary btn-xs" id="a-pub-plato-arxiv"
+                 target="_blank" href="http://sicb.org/meetings/2017/schedule/abstractdetails.php?id=1766">
+                <i class="fa fa-external-link"></i> Paper
+              </a>
+            </p>
+          </div>
+        </div>
+      </div> <!-- End of Publications List -->
+    </div>
+  </div>
+</section>
+
+<section id="teaching" class="ga-label">
+  <div class="header">
+    <h1>Teaching</h1>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-lg-8 center-col">
+
+        <div id="teach-ai" class="row proj ga-label">
+          <div class="header">
+            <h4 class="pub-title">
+              Penn State Mechanical Engineering ME497 Mechatronics
+            </h4>
+            <h5 class="pub-author">
+              Instructor: <a target="_blank" href="https://www.mne.psu.edu/toboldlygo/"> Dr. Sean Brennan</a>
+            </h5>
+          </div>
+          <div class="col-xs-3 visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">
+            <img class="img-responsive" src="static/img/ta_mechatronics.jpg" alt="...">
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <h4 style="font-size:larger">
+              Spring 2018 - Teaching Assistant
+            </h4>
+						<p>
+							This class covers microcomputer interfacing for mechanical engineers: interfacing of electro-mechanical systems to microcomputers for data acquisition, data analysis and digital control.
+						</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="min-height: 130%" class="ga-label">
+  <div class="header">
+    <h1>About</h1>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-lg-8 center-col">
+        <h3>Education</h3>
+        <!-- PhD -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-8" style="font-weight:bolder; font-size: larger">
+            Pennsylvania State University
+          </div>
+          <div class="col-xs-1 visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">
+            Aug 2015 - present
+          </div>
+          <div class="col-xs-12 col-sm-12">
+            PhD, Mechanical Engineering
+          </div>
+          <div class="col-xs-12 col-sm-12">
+            Advisor: Bo Cheng
+          </div>
+        </div>
+        <br>
+        <!-- M.S. -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-8" style="font-weight:bolder; font-size: larger">
+            University of Florida
+          </div>
+          <div class="col-xs-1 visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">
+            Aug 2013 - May 2015
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            M.S., Mechanical Engineering
+          </div>
+        </div>
+				<br>
+        <!-- Bachelor -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-8" style="font-weight:bolder; font-size: larger">
+            Huazhong University of Science and Technology
+          </div>
+          <div class="col-xs-1 visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">
+            Aug 2009 - May 2013
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            B.S., School of Mechanical Science and Technology
+          </div>
+        </div>
+				<br>
+        <div class="row">
+          <div class="col-xs-12" style="font-weight: bold">
+            <h3>Honors:</h3>
+          </div>
+          <div class="col-xs-1"></div>
+          <div class="col-xs-11">
+            Achievement Award, College of Engineering, UF, 2014
+          </div>
+          <div class="col-xs-1"></div>
+          <div class="col-xs-11">
+            Outstanding Graduate of the Year, HUST, 2013
+          </div>
+					<div class="col-xs-1"></div>
+          <div class="col-xs-11">
+            Champion in International On-Water Robot Competition, Chinese Association of Automation, 2013
+          </div>
+					<div class="col-xs-1"></div>
+          <div class="col-xs-11">
+            Excellent Student of Scientific and Technological Innovation, HUST, 2013
+          </div>
+					<div class="col-xs-1"></div>
+          <div class="col-xs-11">
+             Utility Patent, Chinese Department of Intellectual Property, 2013
+          </div>
+					<div class="col-xs-1"></div>
+          <div class="col-xs-11">
+             Champion in International Humanoid Robot Olympic Games, Chinese Association of AI, 2012
+          </div>
+					<div class="col-xs-1"></div>
+          <div class="col-xs-11">
+             Champion in FIRA Robotic Soccer Competition, Chinese Association of Automation, 2012
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End of Education -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-lg-8 center-col">
+        <h3>Personal</h3>
+
+        <div id="soccer" class="row ga-label">
+          <div class="col-xs-12" style="font-weight: bolder; font-size: larger">
+            Soccer
+          </div>
+          <!-- <div class="col-xs-1"></div> -->
+          <div class="col-xs-12">
+            I'm a fan of soccer. I am playing the <a target="_blank" href="http://www.imleagues.com/spa/portal/home">IMLeagures</a> with friends.
+          </div>
+        </div>
+        <br/>
+        <div id="blog" class="row ga-label">
+          <div class="col-xs-12" style="font-weight: bolder; font-size: larger">
+            Blog
+          </div>
+          <div class="col-xs-12">
+          	I am an active blogger sharing interesting things related to my field, as a way of "learning by teaching".
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>  <!-- End of Personal -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-lg-8 center-col">
+        <h3>Contact</h3>
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-11">
+            <i class="fa fa-envelope"></i> Email: pan.liu@psu.edu
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  <!-- End of Contact -->
+</section>
+
+
+<section id="footer" class="ga-label">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-lg-8 center-col">
+        <footer>
+          Last modified: <span id="last-modified"></span>.
+          Content revision: <span id="content-revision">1</span>.
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/js/bootstrap.js"></script>
+
+<!-- Additional modules -->
+<script src="static/js/js.cookie.js"></script>
+<script src="static/js/jquery.easing.js"></script>
+<script src="static/js/jquery.fittext.js"></script>
+
+<!-- Custom -->
+<script src="static/js/my.js"></script>
+	
+	
+</body>
+</html>
+
+<!-- This page is adapted from templates provided by: -->
+<!--
+  Start Bootstrap - Creative Bootstrap Theme (//startbootstrap.com)
+  Code licensed under the Apache License v2.0.
+  For details, see //www.apache.org/licenses/LICENSE-2.0.
+-->
